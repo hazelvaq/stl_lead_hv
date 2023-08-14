@@ -30,6 +30,7 @@ stl_lead_plot <- ggplot(data = stl_lead_prop, aes(x = pct_elevated, y = prop_whi
 stl_lead_plot
 
 ```
+
 Elevated blood lead levels increase as the number of children that identify as white decreases
 
 ```{r}
@@ -37,6 +38,7 @@ ggsave(here::here("figs","scatterplot_pcte_white.png"), height = 6, width = 5)
 ```
 
 ## Histogram
+
 ```{r}
 histogram_stl_lead <- ggplot(data = stl_lead_prop, aes(x=pct_elevated)) + geom_histogram(fill = 'yellow',color = 'purple')
 
@@ -44,4 +46,3 @@ histogram_stl_lead
 
 ggsave(here::here("figs","histogram_stl_lead.jpg"))
 ```
-
